@@ -25,12 +25,58 @@
                     <label for="email">e-mail</label>
                     <input type="email" name="email" id="email" placeholder="Digite seu email" />
                 </div>
+                <div>
+                    <label for="senha">senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                </div>
             </fieldset>
 
+            <fieldset>
+                <label for="Estados">Estados</label>
+                <select name="estados" id="estados">
+                    <option value="SE">SE</option>
+                    <option value="PB">PB</option>
+                    <option value="AC">AC</option>
+                    <option value="ES">ES</option>
+                </select>
+
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento" />
+
+
+                <label for="foto">Selecione uma foto:</label>
+                <input type="file" name="foto" id="foto" accept="image/png, image/jpeg, doc/pdf">
+
+            </fieldset>
+
+            <fieldset>
+                <!--Input do tipo radio trabalham em conjunto ou seja todos estão ligados no type nome-->
+                <legend>Você é um robô?</legend>
+                <img src="imagens/robo.webp" alt="figura de robô verde" width="100" />
+
+                <div>
+                    <input type="radio" name="robo" id="sim" />
+                    <label for="sim">Sim, sou um robô</label>
+
+                    <input type="radio" name="robo" id="nao" />
+                    <label for="nao">Não sou um robô</label>
+
+                    <input type="radio" name="robo" id="talvez" />
+                    <label for="talvez">Talvez eu seja um robô</label>
+
+                </div>
+
+                <input type="checkbox" name="acordo" id="acordo" />
+                <label for="acordo">Declaro que sou um robô e vim pedir educação no chatGPT</label>
+            </fieldset>
+            <!--O atributo value muda o nome do que pode ir escrito no input do tipo submit-->
+            <input type="submit" />
+
+            <button type="submit">Enviar</button>
 
         </form>
 
-        
+
     </main>
 </body>
 
